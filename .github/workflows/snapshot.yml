@@ -2,7 +2,7 @@ name: Release (Snapshot)
 on:
   push:
     branches:
-      - lol
+      - main
 
 jobs:
   snapshot:
