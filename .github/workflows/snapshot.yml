@@ -1,6 +1,6 @@
 name: Release (Snapshot)
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   snapshot:
