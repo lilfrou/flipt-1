@@ -40,12 +40,10 @@ dockers:
   - dockerfile: ./build/Dockerfile
     use: buildx
     image_templates:
-      - "flipt/flipt:latest"
-      - "flipt/flipt:{{ .Tag }}"
-      - "markphelps/flipt:latest" # TODO: deprecate
-      - "markphelps/flipt:{{ .Tag }}" # TODO: deprecate
-      - "ghcr.io/flipt-io/flipt:latest"
-      - "ghcr.io/flipt-io/flipt:{{ .Tag }}"
+      - "lilfrou/flipt-1:latest"
+      - "lilfrou/flip-1t:{{ .Tag }}"
+      - "ghcr.io/lilfrou/flipt-1:latest"
+      - "ghcr.io/lilfrou/flipt-1:{{ .Tag }}"
     build_flag_templates:
       - "--label=org.opencontainers.image.created={{.Date}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
@@ -56,4 +54,4 @@ dockers:
 
 announce:
   discord:
-    enabled: true
+    enabled: false
