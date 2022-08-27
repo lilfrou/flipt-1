@@ -40,10 +40,10 @@ dockers:
   - dockerfile: ./build/Dockerfile
     use: buildx
     image_templates:
-      - "lilfrou/flipt-1:latest"
-      - "lilfrou/flip-1:{{ .Tag }}"
-      - "ghcr.io/lilfrou/flipt-1:latest"
-      - "ghcr.io/lilfrou/flipt-1:{{ .Tag }}"
+      - "lilfrou/flipt:latest"
+      - "lilfrou/flip:{{ .Tag }}"
+      - "ghcr.io/lilfrou/flipt:latest"
+      - "ghcr.io/lilfrou/flipt:{{ .Tag }}"
     build_flag_templates:
       - "--label=org.opencontainers.image.created={{.Date}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
