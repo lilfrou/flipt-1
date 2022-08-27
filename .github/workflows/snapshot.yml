@@ -35,5 +35,4 @@ jobs:
           version: latest
           args: release --rm-dist --snapshot
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ANALYTICS_KEY: ${{ secrets.ANALYTICS_KEY }}
+          GITHUB_TOKEN: ${{ secrets.test }}
