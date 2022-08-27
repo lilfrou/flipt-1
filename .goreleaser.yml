@@ -40,8 +40,6 @@ dockers:
   - dockerfile: ./build/Dockerfile
     use: buildx
     image_templates:
-      - "lilfrou/flipt-1:latest"
-      - "lilfrou/flip-1:{{ .Tag }}"
       - "ghcr.io/lilfrou/flipt-1:latest"
       - "ghcr.io/lilfrou/flipt-1:{{ .Tag }}"
     build_flag_templates:
