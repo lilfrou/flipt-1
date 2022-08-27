@@ -1,8 +1,8 @@
 name: Build/Push Integration Test Image
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: 10 0 * * 0 # weekly, sunday at 00:10
+  push:
+    branches:
+      - lol
 
 permissions:
   packages: write

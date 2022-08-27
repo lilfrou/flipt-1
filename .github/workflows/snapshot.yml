@@ -1,6 +1,8 @@
 name: Release (Snapshot)
 on:
   push:
+    branches:
+      - lol
 
 jobs:
   snapshot:

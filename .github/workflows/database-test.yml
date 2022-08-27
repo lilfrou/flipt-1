@@ -2,7 +2,7 @@ name: Database Tests
 on:
   push:
     branches:
-      - main
+      - lol
     paths-ignore:
       - "deploy/**"
       - "examples/**"
